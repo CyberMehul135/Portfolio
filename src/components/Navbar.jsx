@@ -1,6 +1,6 @@
 export default function Navbar() {
   return (
-    <div className="w-full bg-transparent text-white px-14 absolute">
+    <div className="w-full bg-transparent text-white px-14">
       <div className="w-full max-w-[1600px] h-20 mx-auto flex justify-between items-center">
         <span>
           <img
