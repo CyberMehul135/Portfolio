@@ -1,12 +1,12 @@
 export default function SocialMediaLinks() {
   return (
-    <div className=" flex flex-col gap-5">
+    <div className=" flex flex-col gap-7 absolute right-10 top-1/2 -translate-y-1/2">
       <span>
         <a href="">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 448 512"
-            className="w-8 text-[rgb(176,178,195)] hover:text-white hover:scale-110 transition-hover duration-300"
+            className="w-7 text-[rgb(176,178,195)] hover:text-white hover:scale-110 transition-hover duration-100"
           >
             <path
               fill="currentColor"
@@ -21,7 +21,7 @@ export default function SocialMediaLinks() {
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 512 512"
-            className="w-8 text-[rgb(176,178,195)] hover:text-white hover:scale-110 transition-hover duration-300"
+            className="w-7 text-[rgb(176,178,195)] hover:text-white hover:scale-110 transition-hover duration-100"
           >
             <path
               fill="currentColor"
@@ -36,7 +36,7 @@ export default function SocialMediaLinks() {
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 448 512"
-            className="w-8 text-[rgb(176,178,195)] hover:text-white hover:scale-110 transition-hover duration-300"
+            className="w-7 text-[rgb(176,178,195)] hover:text-white hover:scale-110 transition-hover duration-100"
           >
             <path
               fill="currentColor"
@@ -51,7 +51,7 @@ export default function SocialMediaLinks() {
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 512 512"
-            className="w-8 text-[rgb(176,178,195)] hover:text-white hover:scale-110 transition-hover duration-300"
+            className="w-7 text-[rgb(176,178,195)] hover:text-white hover:scale-110 transition-hover duration-100"
           >
             <path
               fill="currentColor"
@@ -66,7 +66,7 @@ export default function SocialMediaLinks() {
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 496 512"
-            className="w-8 text-[rgb(176,178,195)] hover:text-white hover:scale-110 transition-hover duration-300"
+            className="w-7 text-[rgb(176,178,195)] hover:text-white hover:scale-110 transition-hover duration-100"
           >
             <path
               fill="currentColor"
