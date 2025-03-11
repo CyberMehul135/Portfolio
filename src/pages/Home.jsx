@@ -8,7 +8,9 @@ export default function Home() {
       <div className=" mx-auto flex flex-col  h-screen justify-between">
         <Navbar />
         <HeroSection />
-        <Button text={"Latest Works"} />
+        <span className="mb-16 mx-auto">
+          <Button text={"Latest Works"} />
+        </span>
       </div>
     </div>
   );
