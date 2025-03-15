@@ -1,6 +1,6 @@
 export default function SocialMediaLinks() {
   return (
-    <div className=" flex flex-col gap-7 absolute right-10 top-1/2 -translate-y-1/2">
+    <div className=" flex flex-col gap-7 absolute right-10 max-sm:right-4 top-1/2 -translate-y-1/2">
       <span>
         <a href="">
           <svg
