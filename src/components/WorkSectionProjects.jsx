@@ -14,7 +14,7 @@ export default function WorkSectionProjects() {
   };
 
   return (
-    <div className="py-[90px] flex flex-col gap-24 relative">
+    <div className="py-[90px] flex flex-col gap-24 relative max-sm:py-[40px]">
       <div className="h-[100%] w-[2px] bg-blue-500 absolute top-0 left-1/2 max-md:hidden"></div>
 
       <WorkSectionSingleProject

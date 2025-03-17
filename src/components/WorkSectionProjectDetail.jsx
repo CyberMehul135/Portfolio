@@ -9,7 +9,7 @@ export default function WorkSectionProjectDetail({
   return (
     <div
       className={`w-1/2 flex flex-col items-start justify-center max-md:w-full max-md:pl-0 ${
-        isImgDirectionLeft ? "pl-10" : "pr-10"
+        isImgDirectionLeft ? "pl-10" : "pr-10 max-sm:pr-0"
       }`}
     >
       <h2 className={`text-3xl font-bold ${projectThemeColor} mb-3 mt-2`}>

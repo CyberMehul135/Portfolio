@@ -32,7 +32,6 @@ export default function Home() {
               </svg>
             }
           />
-
           <div className="after:content-[''] after:absolute after:w-[2px] after:h-5 after:bg-[rgb(57,57,57)] after:left-1/2 after:top-[200%]"></div>
         </span>
       </section>
