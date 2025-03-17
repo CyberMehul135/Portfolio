@@ -190,7 +190,7 @@ export default function Home() {
   return (
     <div className="w-full bg-[rgb(17,17,17)]">
       <div ref={canvasRef} className="absolute inset-0 overflow-hidden" />
-      <section className="mx-auto flex flex-col  h-screen justify-between">
+      <section className="mx-auto flex flex-col h-screen justify-between">
         <Navbar />
         <HeroSection />
         <span className="mb-16 mx-auto relative group">
