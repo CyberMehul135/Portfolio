@@ -8,7 +8,7 @@ import AnimatedCanvas from "../components/AnimatedCanvas";
 
 export default function Home() {
   const heroRef = useRef(null);
-  let [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(false);
 
   const handleClick = () => {
     heroRef.current.scrollIntoView({ behavior: "smooth" });
