@@ -1,15 +1,17 @@
 import WorkSectionHeader from "./WorkSectionHeader";
 import WorkSectionProjects from "./WorkSectionProjects";
 
-export default function WorkSection({ ref }) {
+export default function WorkSection({ ref, darkMode }) {
   return (
     <div
       ref={ref}
-      className="text-black bg-white w-full px-10 pb-10 max-sm:px-5"
+      className={`w-full px-10 pb-10 max-sm:px-5 ${
+        darkMode ? "text-white bg-bg-[rgb(17,17,17)]" : "text-black bg-white"
+      }`}
     >
       <div className="max-w-[1600px] mx-auto">
         <WorkSectionHeader />
-        <WorkSectionProjects />
+        <WorkSectionProjects darkMode={darkMode} />
       </div>
     </div>
   );

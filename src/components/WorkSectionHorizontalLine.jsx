@@ -3,6 +3,7 @@ export default function WorkSectionHorizontalLine({
   projectThemeColor,
   toolTipColor,
   isImgDirectionLeft,
+  darkMode,
 }) {
   return (
     <div
@@ -13,7 +14,9 @@ export default function WorkSectionHorizontalLine({
       <a
         href={projectUrl}
         target="new"
-        className={`w-4 h-4 bg-white border-[3px] ${projectThemeColor} rounded-[50%] absolute top-1/2 -translate-y-[50%] hover:scale-125 transition-all ${
+        className={`w-4 h-4 ${
+          darkMode ? "bg-[rgb(17,17,17)]" : "bg-white"
+        } border-[3px] ${projectThemeColor} rounded-[50%] absolute top-1/2 -translate-y-[50%] hover:scale-125 transition-all ${
           isImgDirectionLeft
             ? "right-0 translate-x-[50%]"
             : "left-0 -translate-x-[50%]"

@@ -1,7 +1,7 @@
 import WorkSectionSingleProject from "./WorkSectionSingleProject";
 import WorkSectionVerticleLine from "./WorkSectionVerticleLine";
 
-export default function WorkSectionProjects() {
+export default function WorkSectionProjects({ darkMode }) {
   const projectTechnologies = {
     ecommerce: [
       "#react.js",
@@ -31,6 +31,7 @@ export default function WorkSectionProjects() {
         ProjectDescription={`BoatCyber is a modern e-commerce platform for audio products like earphones, earbuds, and speakers. Designed and built the entire frontend from scratch using React and Tailwind CSS.`}
         projectTechnologies={projectTechnologies.ecommerce}
         isImgDirectionLeft={true}
+        darkMode={darkMode}
       />
 
       <WorkSectionSingleProject
@@ -47,6 +48,7 @@ export default function WorkSectionProjects() {
             Built with React and Tailwind CSS, featuring dark mode and smooth UI animations.`}
         projectTechnologies={projectTechnologies.todoList}
         isImgDirectionLeft={false}
+        darkMode={darkMode}
       />
 
       <WorkSectionSingleProject
@@ -62,6 +64,7 @@ export default function WorkSectionProjects() {
         ProjectDescription={`BoatCyber is a modern e-commerce platform for audio products like earphones, earbuds, and speakers. Designed and built the entire frontend from scratch using React and Tailwind CSS.`}
         projectTechnologies={projectTechnologies.ecommerce}
         isImgDirectionLeft={true}
+        darkMode={darkMode}
       />
 
       <WorkSectionSingleProject
@@ -78,6 +81,7 @@ export default function WorkSectionProjects() {
             Built with React and Tailwind CSS, featuring dark mode and smooth UI animations.`}
         projectTechnologies={projectTechnologies.todoList}
         isImgDirectionLeft={false}
+        darkMode={darkMode}
       />
     </div>
   );

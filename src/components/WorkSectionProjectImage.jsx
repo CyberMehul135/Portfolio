@@ -10,6 +10,7 @@ export default function WorkSectionProjectImage({
   toolTipAfterColor,
   isImgDirectionLeft,
   projectThemeColor,
+  darkMode,
 }) {
   return (
     <div className="w-1/2 flex items-center relative justify-center max-md:w-full">
@@ -38,6 +39,7 @@ export default function WorkSectionProjectImage({
         projectThemeColor={projectThemeColor}
         toolTipColor={toolTipColor}
         isImgDirectionLeft={isImgDirectionLeft}
+        darkMode={darkMode}
       />
     </div>
   );

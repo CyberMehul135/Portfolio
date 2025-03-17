@@ -15,6 +15,7 @@ export default function WorkSectionSingleProject({
   ProjectDescription,
   projectTechnologies,
   isImgDirectionLeft,
+  darkMode,
 }) {
   return (
     <div
@@ -31,6 +32,7 @@ export default function WorkSectionSingleProject({
         toolTipAfterColor={toolTipAfterColor}
         isImgDirectionLeft={isImgDirectionLeft}
         projectThemeColor={projectThemeColor}
+        darkMode={darkMode}
       />
 
       <DynamicLink

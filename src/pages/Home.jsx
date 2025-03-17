@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import Button from "../components/Button";
 import HeroSection from "../components/HeroSection";
 import Navbar from "../components/Navbar";
@@ -8,16 +8,21 @@ import AnimatedCanvas from "../components/AnimatedCanvas";
 
 export default function Home() {
   const heroRef = useRef(null);
+  let [darkMode, setDarkMode] = useState(false);
 
   const handleClick = () => {
     heroRef.current.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
-    <div className="w-full bg-[rgb(17,17,17)]">
+    <div
+      className={`w-full ${
+        darkMode ? "bg-[rgb(17,17,17)]" : "bg-[rgb(17,17,17)]"
+      }`}
+    >
       <AnimatedCanvas />
       <section className="mx-auto flex flex-col h-screen justify-between">
-        <Navbar />
+        <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
         <HeroSection />
         <span className="mb-16 mx-auto relative group">
           <Button text={"Latest Works"} handleClick={handleClick} />
@@ -36,7 +41,7 @@ export default function Home() {
         </span>
       </section>
 
-      <WorkSection ref={heroRef} />
+      <WorkSection ref={heroRef} darkMode={darkMode} />
     </div>
   );
 }
