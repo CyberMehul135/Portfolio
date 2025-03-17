@@ -22,7 +22,6 @@ export default function WorkSectionSingleProject({
         isImgDirectionLeft ? "flex-row" : "flex-row-reverse"
       }`}
     >
-      {/* image-side */}
       <WorkSectionProjectImage
         projectUrl={projectUrl}
         projectImage={projectImage}
@@ -40,7 +39,6 @@ export default function WorkSectionSingleProject({
         projectUrl={projectUrl}
       />
 
-      {/* Detail-side */}
       <WorkSectionProjectDetail
         projectName={projectName}
         projectType={projectType}
