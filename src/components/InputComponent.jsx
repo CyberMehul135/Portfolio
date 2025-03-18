@@ -25,6 +25,7 @@ export default function InputComponent({
         type={inputType}
         id={inputName}
         className="w-full h-10 px-3 border border-[rgb(206,212,218)] rounded outline-blue-400 text-[16px]"
+        name={inputName}
       />
     </div>
   );
