@@ -6,25 +6,6 @@ import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
 import { useState } from "react";
 
 export default function FormComponent({ darkMode }) {
-  // const handleClick = (e) => {
-  //   e.preventDefault();
-  // };
-
-  const [submitted, setSubmitted] = useState(false);
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const form = e.target;
-    const data = new FormData(form);
-
-    fetch("/", {
-      method: "POST",
-      body: data,
-    })
-      .then(() => setSubmitted(true))
-      .catch((error) => alert(error));
-  };
-
   return (
     <div className="flex justify-between py-10 max-md:flex-col">
       <div className="w-1/2 max-md:w-full">
@@ -39,7 +20,6 @@ export default function FormComponent({ darkMode }) {
         name="contact"
         method="POST"
         data-netlify="true"
-        onSubmit={handleSubmit}
       >
         <input type="hidden" name="form-name" value="contact" />
         <InputComponent
