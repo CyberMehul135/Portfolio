@@ -1,12 +1,23 @@
-export default function SocialMediaLinks() {
+export default function SocialMediaLinks({
+  wantHorizontally,
+  color,
+  hoverColor,
+  width,
+}) {
   return (
-    <div className=" flex flex-col gap-7 absolute right-10 max-sm:right-4 top-1/2 -translate-y-1/2">
+    <div
+      className={`flex gap-7 absolute ${
+        wantHorizontally
+          ? "bottom-7"
+          : "flex-col right-10 max-sm:right-4 top-1/2 -translate-y-1/2"
+      }  `}
+    >
       <span>
         <a href="">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 448 512"
-            className="w-7 text-[rgb(176,178,195)] hover:text-white hover:scale-110 transition-hover duration-100"
+            className={`${width} ${color} ${hoverColor} hover:scale-110 transition-hover duration-100`}
           >
             <path
               fill="currentColor"
@@ -21,7 +32,7 @@ export default function SocialMediaLinks() {
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 512 512"
-            className="w-7 text-[rgb(176,178,195)] hover:text-white hover:scale-110 transition-hover duration-100"
+            className={`${width} ${color} ${hoverColor} hover:scale-110 transition-hover duration-100`}
           >
             <path
               fill="currentColor"
@@ -36,7 +47,7 @@ export default function SocialMediaLinks() {
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 448 512"
-            className="w-7 text-[rgb(176,178,195)] hover:text-white hover:scale-110 transition-hover duration-100"
+            className={`${width} ${color} ${hoverColor} hover:scale-110 transition-hover duration-100`}
           >
             <path
               fill="currentColor"
@@ -51,7 +62,7 @@ export default function SocialMediaLinks() {
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 512 512"
-            className="w-7 text-[rgb(176,178,195)] hover:text-white hover:scale-110 transition-hover duration-100"
+            className={`${width} ${color} ${hoverColor} hover:scale-110 transition-hover duration-100`}
           >
             <path
               fill="currentColor"
@@ -66,7 +77,7 @@ export default function SocialMediaLinks() {
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 496 512"
-            className="w-7 text-[rgb(176,178,195)] hover:text-white hover:scale-110 transition-hover duration-100"
+            className={`${width} ${color} ${hoverColor} hover:scale-110 transition-hover duration-100`}
           >
             <path
               fill="currentColor"

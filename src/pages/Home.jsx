@@ -5,6 +5,7 @@ import Navbar from "../components/Navbar";
 import AnimatedArrowElement from "../components/AnimatedArrowElement";
 import WorkSection from "../components/WorkSection";
 import AnimatedCanvas from "../components/AnimatedCanvas";
+import Footer from "../components/Footer";
 
 export default function Home() {
   const heroRef = useRef(null);
@@ -42,6 +43,7 @@ export default function Home() {
       </section>
 
       <WorkSection ref={heroRef} darkMode={darkMode} />
+      <Footer darkMode={darkMode} />
     </div>
   );
 }

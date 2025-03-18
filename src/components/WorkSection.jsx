@@ -5,12 +5,12 @@ export default function WorkSection({ ref, darkMode }) {
   return (
     <div
       ref={ref}
-      className={`w-full px-10 pb-10 max-sm:px-5 ${
+      className={`w-full px-10 max-sm:px-5 ${
         darkMode ? "text-white bg-bg-[rgb(17,17,17)]" : "text-black bg-white"
       }`}
     >
       <div className="max-w-[1600px] mx-auto">
-        <WorkSectionHeader />
+        <WorkSectionHeader text={`Latest Work`} />
         <WorkSectionProjects darkMode={darkMode} />
       </div>
     </div>

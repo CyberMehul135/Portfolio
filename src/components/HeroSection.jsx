@@ -35,7 +35,12 @@ export default function HeroSection() {
         </span>
 
         <span>
-          <SocialMediaLinks />
+          <SocialMediaLinks
+            wantHorizontally={false}
+            color={"text-gray-500"}
+            hoverColor={`hover:text-white`}
+            width={`w-7`}
+          />
         </span>
       </div>
     </section>
