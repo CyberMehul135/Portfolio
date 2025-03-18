@@ -18,7 +18,11 @@ export default function FormComponent({ darkMode }) {
           alt="contact-me-image"
         />
       </div>
-      <form className="w-1/2 flex flex-col gap-4 px-4 max-md:w-full max-sm:px-0">
+      <form
+        className="w-1/2 flex flex-col gap-4 px-4 max-md:w-full max-sm:px-0"
+        name="contact"
+        netlify
+      >
         <InputComponent
           inputType={`text`}
           inputName={`Name`}
