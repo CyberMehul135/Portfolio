@@ -5,6 +5,10 @@ import PermIdentityIcon from "@mui/icons-material/PermIdentity";
 import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
 
 export default function FormComponent({ darkMode }) {
+  const handleClick = (e) => {
+    e.preventDefault();
+  };
+
   return (
     <div className="flex justify-between py-10 max-md:flex-col">
       <div className="w-1/2 max-md:w-full">
@@ -28,7 +32,7 @@ export default function FormComponent({ darkMode }) {
           darkMode={darkMode}
         />
         <TextAreaComponent darkMode={darkMode} />
-        <DynamicButton />
+        <DynamicButton handleClick={handleClick} />
       </form>
     </div>
   );

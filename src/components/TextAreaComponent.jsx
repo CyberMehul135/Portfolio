@@ -10,10 +10,10 @@ export default function TextAreaComponent({ darkMode }) {
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="feather feather-message-square"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            className="feather feather-message-square"
           >
             <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
           </svg>
@@ -27,7 +27,7 @@ export default function TextAreaComponent({ darkMode }) {
         id="message"
         rows={10}
         cols={10}
-        className="border border-[rgb(206,212,218)] outline-blue-400 rounded w-full"
+        className="border border-[rgb(206,212,218)] outline-blue-400 rounded w-full px-4 py-4 text-lg"
       ></textarea>
     </div>
   );
