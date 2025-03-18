@@ -6,6 +6,7 @@ import AnimatedArrowElement from "../components/AnimatedArrowElement";
 import WorkSection from "../components/WorkSection";
 import AnimatedCanvas from "../components/AnimatedCanvas";
 import Footer from "../components/Footer";
+import LetsConnect from "../components/LetsConnect";
 
 export default function Home() {
   const heroRef = useRef(null);
@@ -22,7 +23,7 @@ export default function Home() {
       }`}
     >
       <AnimatedCanvas />
-      <section className="mx-auto flex flex-col h-screen justify-between">
+      <section className={`mx-auto flex flex-col h-screen justify-between`}>
         <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
         <HeroSection />
         <span className="mb-16 mx-auto relative group">
@@ -43,6 +44,7 @@ export default function Home() {
       </section>
 
       <WorkSection ref={heroRef} darkMode={darkMode} />
+      <LetsConnect darkMode={darkMode} />
       <Footer darkMode={darkMode} />
     </div>
   );

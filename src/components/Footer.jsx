@@ -1,6 +1,4 @@
 import SocialMediaLinks from "./SocialMediaLinks";
-import ToolTip from "./Tooltip";
-import WorkSectionHeader from "./WorkSectionHeader";
 
 export default function Footer({ darkMode }) {
   return (
