@@ -1,4 +1,4 @@
-import ToolTip from "./Tooltip";
+import ToolTip from "./ToolTip";
 import WorkSectionHorizontalLine from "./WorkSectionHorizontalLine";
 
 export default function WorkSectionProjectImage({
