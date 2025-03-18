@@ -1,9 +1,9 @@
-export default function DynamicButton({ handleClick }) {
+export default function DynamicButton() {
   return (
     <>
       <button
         className="w-full h-10 bg-blue-500 text-white font-semibold rounded cursor-pointer flex justify-center items-center gap-2 hover:scale-105 transition-all duration-300"
-        onClick={handleClick}
+        type="submit"
       >
         <div>
           <img

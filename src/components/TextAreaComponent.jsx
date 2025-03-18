@@ -23,7 +23,7 @@ export default function TextAreaComponent({ darkMode }) {
         </div>
       </label>
       <textarea
-        name=""
+        name="message"
         id="message"
         rows={10}
         cols={10}

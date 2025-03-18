@@ -1,6 +1,7 @@
 export default function InputComponent({
   inputType,
   inputName,
+  inputLable,
   inputIconUrl,
   darkMode,
 }) {
@@ -18,7 +19,7 @@ export default function InputComponent({
           {inputIconUrl}
         </div>
         <div className={`${darkMode ? "text-white" : "text-[rgb(68,68,68)]"}`}>
-          {inputName}
+          {inputLable}
         </div>
       </label>
       <input
