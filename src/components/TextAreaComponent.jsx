@@ -25,9 +25,10 @@ export default function TextAreaComponent({ darkMode }) {
       <textarea
         name="message"
         id="message"
-        rows={10}
-        cols={10}
-        className="border border-[rgb(206,212,218)] outline-blue-400 rounded w-full px-4 py-4 text-lg"
+        // rows={5}
+        // cols={10}
+        className="border border-[rgb(206,212,218)] outline-[rgb(23,136,174)] rounded w-full px-4 py-4 text-lg min-h-[200px] max-md:min-h-[120px]"
+        required
       ></textarea>
     </div>
   );

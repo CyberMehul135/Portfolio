@@ -20,8 +20,8 @@ export default function Footer({ darkMode }) {
         </div>
         <SocialMediaLinks
           wantHorizontally={true}
-          color={"text-blue-500"}
-          hoverColor={`hover:text-blue-500`}
+          color={"text-[rgb(23,136,174)]"}
+          hoverColor={`hover:text-[rgb(23,136,174)]`}
           width={`w-[18px]`}
         />
       </div>

@@ -3,6 +3,8 @@ export default function SocialMediaLinks({
   color,
   hoverColor,
   width,
+  mobileWidth,
+  mobileColor,
 }) {
   return (
     <div
@@ -17,7 +19,7 @@ export default function SocialMediaLinks({
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 448 512"
-            className={`${width} ${color} ${hoverColor} hover:scale-110 transition-hover duration-100`}
+            className={`${width} ${mobileWidth} ${color} ${mobileColor} ${hoverColor} hover:scale-110 transition-hover duration-100`}
           >
             <path
               fill="currentColor"
@@ -32,7 +34,7 @@ export default function SocialMediaLinks({
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 512 512"
-            className={`${width} ${color} ${hoverColor} hover:scale-110 transition-hover duration-100`}
+            className={`${width} ${mobileWidth} ${color} ${mobileColor} ${hoverColor} hover:scale-110 transition-hover duration-100`}
           >
             <path
               fill="currentColor"
@@ -47,7 +49,7 @@ export default function SocialMediaLinks({
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 448 512"
-            className={`${width} ${color} ${hoverColor} hover:scale-110 transition-hover duration-100`}
+            className={`${width} ${mobileWidth} ${color} ${mobileColor} ${hoverColor} hover:scale-110 transition-hover duration-100`}
           >
             <path
               fill="currentColor"
@@ -62,7 +64,7 @@ export default function SocialMediaLinks({
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 512 512"
-            className={`${width} ${color} ${hoverColor} hover:scale-110 transition-hover duration-100`}
+            className={`${width} ${mobileWidth} ${color} ${mobileColor} ${hoverColor} hover:scale-110 transition-hover duration-100`}
           >
             <path
               fill="currentColor"
@@ -77,7 +79,7 @@ export default function SocialMediaLinks({
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 496 512"
-            className={`${width} ${color} ${hoverColor} hover:scale-110 transition-hover duration-100`}
+            className={`${width} ${mobileWidth} ${color} ${mobileColor} ${hoverColor} hover:scale-110 transition-hover duration-100`}
           >
             <path
               fill="currentColor"

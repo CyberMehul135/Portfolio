@@ -26,7 +26,7 @@ export default function Home() {
       <section className={`mx-auto flex flex-col h-screen justify-between`}>
         <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
         <HeroSection />
-        <span className="mb-16 mx-auto relative group">
+        <span className="mb-16 max-sm:mb-[90px] -translate-y-1 mx-auto relative group">
           <Button text={"Latest Works"} handleClick={handleClick} />
           <AnimatedArrowElement
             element={
@@ -39,7 +39,7 @@ export default function Home() {
               </svg>
             }
           />
-          <div className="after:content-[''] after:absolute after:w-[2px] after:h-5 after:bg-[rgb(57,57,57)] after:left-1/2 after:top-[200%]"></div>
+          <div className="after:content-[''] after:absolute after:w-[2px] after:h-5 after:bg-[rgb(57,57,57)] after:left-1/2 after:top-[200%] max-sm:hidden"></div>
         </span>
       </section>
 

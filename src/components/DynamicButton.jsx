@@ -3,7 +3,7 @@ export default function DynamicButton({ success }) {
     <>
       <button
         className={`w-full h-10 text-white font-semibold rounded cursor-pointer flex justify-center items-center gap-2 hover:scale-105 transition-all duration-300 ${
-          success ? "bg-green-500" : "bg-blue-500"
+          success ? "bg-green-500" : "bg-[rgb(23,136,174)]"
         } `}
         type="submit"
       >

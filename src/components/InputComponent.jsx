@@ -25,8 +25,9 @@ export default function InputComponent({
       <input
         type={inputType}
         id={inputName}
-        className="w-full h-10 px-3 border border-[rgb(206,212,218)] rounded outline-blue-400 text-[16px]"
+        className="w-full h-10 px-3 border border-[rgb(206,212,218)] rounded outline-[rgb(23,136,174)] text-[16px]"
         name={inputName}
+        required
       />
     </div>
   );

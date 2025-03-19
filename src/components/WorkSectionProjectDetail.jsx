@@ -8,17 +8,23 @@ export default function WorkSectionProjectDetail({
 }) {
   return (
     <div
-      className={`w-1/2 flex flex-col items-start justify-center max-md:w-full max-md:pl-0 ${
+      className={`w-1/2 flex flex-col items-start justify-center max-md:w-full max-md:pl-0 max-md:mt-[20px] ${
         isImgDirectionLeft ? "pl-10" : "pr-10 max-sm:pr-0"
       }`}
     >
-      <h2 className={`text-3xl font-bold ${projectThemeColor} mb-3 mt-2`}>
+      <h2
+        className={`text-3xl max-md:text-[24px] font-bold ${projectThemeColor} mb-3 mt-2`}
+      >
         {projectName}
       </h2>
-      <p className={`text-lg ${projectThemeColor} font-semibold mb-3`}>
+      <p
+        className={`text-lg max-md:text-[16px] ${projectThemeColor} font-semibold mb-3`}
+      >
         {projectType}
       </p>
-      <p className="mb-3 text-[17px]">{ProjectDescription}</p>
+      <p className="mb-3 text-[17px] max-md:text-[15px]">
+        {ProjectDescription}
+      </p>
       <ul className="flex gap-2 flex-wrap">
         {ProjectTechnologies.map((technologies, index) => {
           return (
