@@ -1,7 +1,11 @@
 import SocialMediaLinks from "../components/SocialMediaLinks";
 import Button from "./Button";
 
-export default function HeroSection() {
+export default function HeroSection({ setPopupOn }) {
+  const handleClick = () => {
+    setPopupOn(true);
+  };
+
   return (
     <section className=" w-full text-white px-10 relative max-sm:px-1">
       <div className="flex justify-between max-w-[1600px] mx-auto">
@@ -15,7 +19,7 @@ export default function HeroSection() {
             </span>
             <span className="mt-3 flex items-center max-sm:justify-center relative">
               <span className="group">
-                <Button text={"About Me"} />
+                <Button text={"About Me"} handleClick={handleClick} />
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"

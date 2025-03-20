@@ -7,10 +7,12 @@ import WorkSection from "../components/WorkSection";
 import AnimatedCanvas from "../components/AnimatedCanvas";
 import Footer from "../components/Footer";
 import LetsConnect from "../components/LetsConnect";
+import AboutMePopup from "../components/AboutMePopup";
 
 export default function Home() {
   const heroRef = useRef(null);
   const [darkMode, setDarkMode] = useState(false);
+  const [popupOn, setPopupOn] = useState(false);
 
   const handleClick = () => {
     heroRef.current.scrollIntoView({ behavior: "smooth" });
@@ -25,7 +27,8 @@ export default function Home() {
       <AnimatedCanvas />
       <section className={`mx-auto flex flex-col h-screen justify-between`}>
         <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
-        <HeroSection />
+        <HeroSection setPopupOn={setPopupOn} />
+        <AboutMePopup popupOn={popupOn} setPopupOn={setPopupOn} />
         <span className="mb-16 max-sm:mb-[90px] -translate-y-1 mx-auto relative group">
           <Button text={"Latest Works"} handleClick={handleClick} />
           <AnimatedArrowElement
