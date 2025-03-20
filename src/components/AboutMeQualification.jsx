@@ -1,7 +1,7 @@
 import { useState } from "react";
 import AboutMeQualificationOutput from "./AboutMeQualificationOutput";
 
-export default function AboutMeQualification() {
+export default function AboutMeQualification({ educations, experience }) {
   const [qualification, setQualification] = useState("Skills");
 
   const handleClick = (e) => {
@@ -22,7 +22,11 @@ export default function AboutMeQualification() {
         <span>Education</span>
       </div>
 
-      <AboutMeQualificationOutput qualification={qualification} />
+      <AboutMeQualificationOutput
+        qualification={qualification}
+        educations={educations}
+        experience={experience}
+      />
     </div>
   );
 }

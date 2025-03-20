@@ -14,6 +14,45 @@ export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
   const [popupOn, setPopupOn] = useState(false);
 
+  // CHILD COMPONENT INFORMATION
+  const [aboutMeParagraph, setAboutMeParagraph] =
+    useState(`I help business owners and busy web developers to design & develop
+            creative websites that fits their vision and attracts the visitors to
+            stay for ever. Technologies and tools that I use to create such
+            awesome websites.`);
+  const [techHashTags, setTechHashTags] = useState([
+    "#react",
+    "#javascript",
+    "#css",
+    "#tailwind",
+    "#html",
+    "#figma",
+    "#git",
+    "#github",
+    "#terminal",
+    "#reactrouter",
+  ]);
+  const [educations, setEducations] = useState([
+    { passingYear: "2020", qualified: "B.COM | Bachlore of commerce" },
+    { passingYear: "2016", qualified: "12th | HSC" },
+    { passingYear: "2014", qualified: "10th | SSC" },
+  ]);
+
+  const [experience, setExperience] = useState([
+    {
+      project: "Portfolio Webapp",
+      techStack: "Tech Stack : React.js, Tailwind CSS",
+    },
+    {
+      project: "E-Commerce Webapp ",
+      techStack: "Tech Stack : React.js, Tailwind CSS",
+    },
+    {
+      project: "To-Do App with Dark Mode",
+      techStack: "Tech Stack : React.js, Tailwind CSS",
+    },
+  ]);
+
   const handleClick = () => {
     heroRef.current.scrollIntoView({ behavior: "smooth" });
   };
@@ -28,7 +67,17 @@ export default function Home() {
       <section className={`mx-auto flex flex-col h-screen justify-between`}>
         <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
         <HeroSection setPopupOn={setPopupOn} />
-        <AboutMePopup popupOn={popupOn} setPopupOn={setPopupOn} />
+        <AboutMePopup
+          popupOn={popupOn}
+          setPopupOn={setPopupOn}
+          aboutMeHeading={`ABOUT ME`}
+          aboutMeParagraph={aboutMeParagraph}
+          techHashTags={techHashTags}
+          aboutMeHeading2={`FRONTEND DEVELOPER`}
+          educations={educations}
+          experience={experience}
+          imageUrl={`/images/coder.svg`}
+        />
         <span className="mb-16 max-sm:mb-[90px] -translate-y-1 mx-auto relative group">
           <Button text={"Latest Works"} handleClick={handleClick} />
           <AnimatedArrowElement

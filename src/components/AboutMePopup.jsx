@@ -1,27 +1,18 @@
 import AboutMeDetailsSection from "./AboutMeDetailsSection";
 import AboutMeImageSection from "./AboutMeImageSection";
-import { useState } from "react";
 import CloseButton from "./CloseButton";
 
-export default function AboutMePopup({ popupOn, setPopupOn }) {
-  const [aboutMeParagraph, setAboutMeParagraph] =
-    useState(`I help business owners and busy web developers to design & develop
-            creative websites that fits their vision and attracts the visitors to
-            stay for ever. Technologies and tools that I use to create such
-            awesome websites.`);
-  const [techHashTags, setTechHashTags] = useState([
-    "#react",
-    "#javascript",
-    "#css",
-    "#tailwind",
-    "#html",
-    "#figma",
-    "#git",
-    "#github",
-    "#terminal",
-    "#reactrouter",
-  ]);
-
+export default function AboutMePopup({
+  popupOn,
+  setPopupOn,
+  aboutMeHeading,
+  aboutMeParagraph,
+  techHashTags,
+  aboutMeHeading2,
+  educations,
+  experience,
+  imageUrl,
+}) {
   return (
     <>
       <div
@@ -33,13 +24,15 @@ export default function AboutMePopup({ popupOn, setPopupOn }) {
       >
         <div className=" w-full h-fit rounded-xl bg-[rgb(25,25,25)] relative px-10 py-5 flex max-md:h-fit">
           <AboutMeDetailsSection
-            aboutMeHeading={`ABOUT ME`}
+            aboutMeHeading={aboutMeHeading}
             aboutMeParagraph={aboutMeParagraph}
             techHashTags={techHashTags}
-            aboutMeHeading2={`FRONTEND DEVELOPER`}
+            aboutMeHeading2={aboutMeHeading2}
+            educations={educations}
+            experience={experience}
           />
-          <AboutMeImageSection imageUrl={`/images/coder.svg`} />
-          <CloseButton popupOn={popupOn} setPopupOn={setPopupOn} />
+          <AboutMeImageSection imageUrl={imageUrl} />
+          <CloseButton setPopupOn={setPopupOn} />
         </div>
       </div>
     </>

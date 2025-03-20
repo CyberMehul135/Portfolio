@@ -1,6 +1,6 @@
 import CloseIcon from "@mui/icons-material/Close";
 
-export default function CloseButton({ popupOn, setPopupOn }) {
+export default function CloseButton({ setPopupOn }) {
   const handleClick = () => {
     setPopupOn(false);
   };

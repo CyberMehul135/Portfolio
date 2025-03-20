@@ -2,16 +2,20 @@ import AboutMeQualificationEducation from "./AboutMeQualificationEducation";
 import AboutMeQualificationExperience from "./AboutMeQualificationExperience";
 import AboutMeQualificationSkills from "./AboutMeQualificationSkills";
 
-export default function AboutMeQualificationOutput({ qualification }) {
+export default function AboutMeQualificationOutput({
+  qualification,
+  educations,
+  experience,
+}) {
   return (
     <>
       <div>
         {qualification == "Skills" ? (
           <AboutMeQualificationSkills />
         ) : qualification == "Experience" ? (
-          <AboutMeQualificationExperience />
+          <AboutMeQualificationExperience experience={experience} />
         ) : qualification == "Education" ? (
-          <AboutMeQualificationEducation />
+          <AboutMeQualificationEducation educations={educations} />
         ) : (
           ""
         )}

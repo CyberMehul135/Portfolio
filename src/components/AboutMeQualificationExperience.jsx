@@ -1,22 +1,14 @@
-export default function AboutMeQualificationExperience() {
+export default function AboutMeQualificationExperience({ experience }) {
   return (
     <div className="flex flex-col gap-3">
-      <div className="max-md:pl-[34px]">
-        <div className="text-[15px] text-blue-300">Portfolio Website</div>
-        <div className="text-sm">Tech Stack : React.js, Tailwind CSS</div>
-      </div>
-      <div className="max-md:pl-[34px]">
-        <div className="text-[15px] text-blue-300">E-Commerce Website</div>
-        <div className="text-sm">
-          Tech Stack : React.js, Tailwind CSS, mirage.js
-        </div>
-      </div>
-      <div className="max-md:pl-[34px]">
-        <div className="text-[15px] text-blue-300">
-          To-Do App with Dark Mode
-        </div>
-        <div className="text-sm">Tech Stack: React.js, Tailwind CSS</div>
-      </div>
+      {experience.map((project, i) => {
+        return (
+          <div key={i}>
+            <div className="text-[15px] text-blue-300">{project.project}</div>
+            <div className="text-sm">{project.techStack}</div>
+          </div>
+        );
+      })}
     </div>
   );
 }
