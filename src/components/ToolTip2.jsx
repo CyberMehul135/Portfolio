@@ -8,7 +8,10 @@ export default function ToolTip2({ name, textColor, bgColor, elementClick }) {
             : "top-10 scale-0 opacity-0"
         }`}
       >
-        {name}
+        {name}{" "}
+        <span
+          className={`absolute top-1/2 -translate-y-[25%] left-1/2 -translate-x-1/2 w-4 h-4 rotate-45 -z-10 ${bgColor}`}
+        ></span>
       </div>
     </>
   );

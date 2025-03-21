@@ -8,7 +8,14 @@ export default function DarkModeButton({ darkMode, setDarkMode }) {
 
   return (
     <button className="z-10 cursor-pointer" onClick={handleDarkMode}>
-      {darkMode ? <WbSunnyIcon /> : <DarkModeIcon />}
+      {darkMode ? (
+        <WbSunnyIcon
+          className="animate-spin"
+          style={{ animationDuration: "20s" }}
+        />
+      ) : (
+        <DarkModeIcon />
+      )}
     </button>
   );
 }

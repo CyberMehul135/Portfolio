@@ -15,13 +15,12 @@ export default function Home() {
   const [popupOn, setPopupOn] = useState(false);
 
   // CHILD COMPONENT INFORMATION
-  const [aboutMeParagraph, setAboutMeParagraph] =
-    useState(`I help business owners and busy web developers to design & develop
-            creative websites that fits their vision and attracts the visitors to
-            stay for ever. Technologies and tools that I use to create such
-            awesome websites.`);
+  const [aboutMeParagraph, setAboutMeParagraph] = useState(
+    `I design and develop responsive websites using React, Redux, Tailwind CSS, and JavaScript. I focus on building clean and interactive user interfaces that align with modern web standards and that users enjoy interacting with.`
+  );
   const [techHashTags, setTechHashTags] = useState([
     "#react",
+    "#redux",
     "#javascript",
     "#css",
     "#tailwind",
@@ -52,6 +51,36 @@ export default function Home() {
       techStack: "Tech Stack : React.js, Tailwind CSS",
     },
   ]);
+  const [skills, setSkills] = useState([
+    {
+      id: "react",
+      icon: "devicon-react-original colored",
+      name: "React.JS",
+      bgColor: "bg-[rgb(97,218,244)]",
+      textColor: "text-black",
+    },
+    {
+      id: "javascript",
+      icon: "devicon-javascript-plain colored",
+      name: "Javascript",
+      bgColor: "bg-[rgb(240,219,79)]",
+      textColor: "text-black",
+    },
+    {
+      id: "tailwind",
+      icon: "devicon-tailwindcss-original colored",
+      name: "Tailwind.css",
+      bgColor: "bg-[rgb(97,218,244)]",
+      textColor: "text-black",
+    },
+    {
+      id: "redux",
+      icon: "devicon-redux-original colored",
+      name: "Redux.JS",
+      bgColor: "bg-[rgb(118,74,188)]",
+      textColor: "text-white",
+    },
+  ]);
 
   const handleClick = () => {
     heroRef.current.scrollIntoView({ behavior: "smooth" });
@@ -76,6 +105,7 @@ export default function Home() {
           aboutMeHeading2={`FRONTEND DEVELOPER`}
           educations={educations}
           experience={experience}
+          skills={skills}
           imageUrl={`/images/coder.svg`}
         />
         <span className="mb-16 max-sm:mb-[90px] -translate-y-1 mx-auto relative group">

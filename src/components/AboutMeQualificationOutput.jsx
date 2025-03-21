@@ -6,12 +6,13 @@ export default function AboutMeQualificationOutput({
   qualification,
   educations,
   experience,
+  skills,
 }) {
   return (
     <>
       <div>
         {qualification == "Skills" ? (
-          <AboutMeQualificationSkills />
+          <AboutMeQualificationSkills skills={skills} />
         ) : qualification == "Experience" ? (
           <AboutMeQualificationExperience experience={experience} />
         ) : qualification == "Education" ? (

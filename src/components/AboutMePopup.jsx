@@ -11,6 +11,7 @@ export default function AboutMePopup({
   aboutMeHeading2,
   educations,
   experience,
+  skills,
   imageUrl,
 }) {
   return (
@@ -30,6 +31,7 @@ export default function AboutMePopup({
             aboutMeHeading2={aboutMeHeading2}
             educations={educations}
             experience={experience}
+            skills={skills}
           />
           <AboutMeImageSection imageUrl={imageUrl} />
           <CloseButton setPopupOn={setPopupOn} />

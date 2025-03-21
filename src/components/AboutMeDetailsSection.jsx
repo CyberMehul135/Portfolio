@@ -11,6 +11,7 @@ export default function AboutMeDetailsSection({
   aboutMeHeading2,
   educations,
   experience,
+  skills,
 }) {
   return (
     <div className="w-1/2 flex flex-col items-center justify-around max-md:w-full">
@@ -22,7 +23,11 @@ export default function AboutMeDetailsSection({
 
       <div className="flex flex-col gap-[10px] max-w-[400px] w-full h-1/2 mt-10 max-md:items-center">
         <AboutMeHeading2 aboutMeHeading2={aboutMeHeading2} />
-        <AboutMeQualification educations={educations} experience={experience} />
+        <AboutMeQualification
+          educations={educations}
+          experience={experience}
+          skills={skills}
+        />
       </div>
     </div>
   );
