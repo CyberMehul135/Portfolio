@@ -5,6 +5,7 @@ export default function AboutMeQualification({
   educations,
   experience,
   skills,
+  darkMode,
 }) {
   const [qualification, setQualification] = useState("Skills");
 
@@ -24,8 +25,12 @@ export default function AboutMeQualification({
         <span
           className={`cursor-pointer ${
             qualification == "Skills"
-              ? "px-2 py-[1px] bg-[rgb(39,41,45)] shadow-[0_0_15px_rgba(0,0,0,0.5)] rounded-xl"
-              : ""
+              ? `px-2 py-[1px] rounded-xl ${
+                  darkMode
+                    ? "bg-[rgb(39,41,45)] shadow-[0_0_15px_rgba(0,0,0,0.5)]"
+                    : "bg-white shadow-[0_0_15px_rgba(0,0,0,0.1)]"
+                }`
+              : ``
           }`}
         >
           Skills
@@ -33,8 +38,12 @@ export default function AboutMeQualification({
         <span
           className={`cursor-pointer ${
             qualification == "Experience"
-              ? "px-2 py-[1px] bg-[rgb(39,41,45)] shadow-[0_0_15px_rgba(0,0,0,0.5)] rounded-xl"
-              : ""
+              ? `px-2 py-[1px] rounded-xl ${
+                  darkMode
+                    ? "bg-[rgb(39,41,45)] shadow-[0_0_15px_rgba(0,0,0,0.5)]"
+                    : "bg-white shadow-[0_0_15px_rgba(0,0,0,0.1)]"
+                }`
+              : ``
           }`}
         >
           Experience
@@ -42,8 +51,12 @@ export default function AboutMeQualification({
         <span
           className={`cursor-pointer ${
             qualification == "Education"
-              ? "px-2 py-[1px] bg-[rgb(39,41,45)] shadow-[0_0_15px_rgba(0,0,0,0.5)] rounded-xl"
-              : ""
+              ? `px-2 py-[1px] rounded-xl ${
+                  darkMode
+                    ? "bg-[rgb(39,41,45)] shadow-[0_0_15px_rgba(0,0,0,0.5)]"
+                    : "bg-white shadow-[0_0_15px_rgba(0,0,0,0.1)]"
+                }`
+              : ``
           }`}
         >
           Education

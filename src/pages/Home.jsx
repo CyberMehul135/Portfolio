@@ -103,6 +103,7 @@ export default function Home() {
           experience={experience}
           skills={skills}
           imageUrl={`/images/coder.svg`}
+          darkMode={darkMode}
         />
         <span className="mb-16 max-sm:mb-[90px] -translate-y-1 mx-auto relative group">
           <Button text={"Latest Works"} handleClick={handleClick} />

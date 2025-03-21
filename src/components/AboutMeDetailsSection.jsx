@@ -12,6 +12,7 @@ export default function AboutMeDetailsSection({
   educations,
   experience,
   skills,
+  darkMode,
 }) {
   return (
     <div className="w-1/2 flex flex-col items-center justify-around max-md:w-full">
@@ -27,6 +28,7 @@ export default function AboutMeDetailsSection({
           educations={educations}
           experience={experience}
           skills={skills}
+          darkMode={darkMode}
         />
       </div>
     </div>
