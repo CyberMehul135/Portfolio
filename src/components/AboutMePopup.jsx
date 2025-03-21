@@ -23,7 +23,7 @@ export default function AboutMePopup({
             : "block top-[59%] left-[15.5%] -translate-x-1/2 -translate-y-1/2 scale-0 transition-all duration-200 ease-in-out max-sm:top-[73%] max-sm:left-[50%]"
         }`}
       >
-        <div className=" w-full h-fit rounded-xl bg-[rgb(25,25,25)] relative px-10 py-5 flex max-md:h-fit">
+        <div className=" w-full h-fit rounded-xl bg-[rgb(25,25,25)] relative px-10 py-5 flex max-md:h-fit max-sm:min-h-[600px] ">
           <AboutMeDetailsSection
             aboutMeHeading={aboutMeHeading}
             aboutMeParagraph={aboutMeParagraph}

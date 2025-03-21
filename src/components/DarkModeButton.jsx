@@ -14,7 +14,7 @@ export default function DarkModeButton({ darkMode, setDarkMode }) {
           style={{ animationDuration: "20s" }}
         />
       ) : (
-        <DarkModeIcon />
+        <DarkModeIcon className="text-black" />
       )}
     </button>
   );
