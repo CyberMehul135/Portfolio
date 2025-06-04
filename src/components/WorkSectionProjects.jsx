@@ -12,11 +12,42 @@ export default function WorkSectionProjects({ darkMode }) {
       "#figma",
     ],
     todoList: ["#react.js", "#tailwind.css", "#javascript", "#css"],
+    taskmanagement: [
+      "#react.js",
+      "#tailwind.css",
+      "#javascript",
+      "#node.js",
+      "#express.js",
+      "#mongodb",
+      "#mongoose",
+      "#cloudinary",
+      "#multer",
+      "#vercel",
+      "#render",
+    ],
   };
 
   return (
     <div className="py-[90px] flex flex-col gap-24 relative max-sm:py-[40px]">
       <WorkSectionVerticleLine />
+
+      <WorkSectionSingleProject
+        projectUrl={`https://employee-task-frontend.vercel.app/`}
+        projectImage={`/projectImages/taskmanagement.png`}
+        isImageLaptopType={true}
+        toolTipText={`Taskmanager`}
+        toolTipColor={`bg-blue-500`}
+        toolTipAfterColor={`after:bg-blue-500`}
+        projectName={`Task Management System`}
+        projectType={`(Task Manager)`}
+        projectThemeColor={`text-blue-500`}
+        ProjectDescription={`TaskVerse is a responsive and user-friendly Task Management System built to streamline employee task tracking and team productivity. Developed the complete frontend using React and Tailwind CSS and integrated it with a Node.js + Express backend and MongoDB for persistent data storage. Features include task assignment, employee profile management, task status updates, and authentication functionalities.
+
+`}
+        projectTechnologies={projectTechnologies.taskmanagement}
+        isImgDirectionLeft={false}
+        darkMode={darkMode}
+      />
 
       <WorkSectionSingleProject
         projectUrl={`https://boatcyber.netlify.app/`}

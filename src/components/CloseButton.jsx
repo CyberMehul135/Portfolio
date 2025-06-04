@@ -8,7 +8,7 @@ export default function CloseButton({ setPopupOn, darkMode }) {
   return (
     <>
       <button
-        className={`absolute right-7 rounded-[50%] w-8 h-8 flex justify-center items-center cursor-pointer hover:rotate-180 duration-100 ${
+        className={`absolute right-7 rounded-[50%] w-8 h-8 flex justify-center items-center cursor-pointer hover:rotate-180 duration-100${
           darkMode
             ? "bg-[rgb(39,41,45)] shadow-[0_0_15px_rgba(0,0,0,0.5)]"
             : "bg-white shadow-[0_0_15px_rgba(0,0,0,0.1)]"
