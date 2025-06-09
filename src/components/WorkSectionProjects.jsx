@@ -32,7 +32,7 @@ export default function WorkSectionProjects({ darkMode }) {
       <WorkSectionVerticleLine />
 
       <WorkSectionSingleProject
-        projectUrl={`https://employee-task-frontend.vercel.app/employeesdashboard`}
+        projectUrl={`https://employee-task-frontend.vercel.app/`}
         projectImage={`/projectImages/taskmanagement.png`}
         isImageLaptopType={true}
         toolTipText={`Taskmanager`}
